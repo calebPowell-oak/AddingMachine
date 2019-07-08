@@ -10,7 +10,7 @@ export class TextInputComponent implements OnInit {
   log: any = "123123";
 
   value = '';
-  onEnter(value: string) { this.log = this.run(value); }
+  onEnter(value: string) { this.log += "\n" + this.run(value); }
   ops: string[] = [];
   vals: number[] = [];
 
