@@ -1,3 +1,8 @@
-<pre>Output goes here. {{log}}</pre>
+<pre>Output goes here. </pre>
+<textarea>{{log}}</textarea>
 <hr />
 <p>text-input goes here! You need to change this to a text input field.</p>
+
+Inupt:<br>
+<input #box (keyup.enter)="onEnter(box.value)">
+<p>{{value}}</p>
